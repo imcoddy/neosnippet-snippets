@@ -75,3 +75,8 @@ snippet eval
 		${2:#:handle failure...}
 	}
 
+snippet log
+	use Data::Dumper;  print Data::Dumper->Dump( ${1:#:expression} );
+
+snippet vd
+	use Data::Dumper;  print Data::Dumper->Dump( ${1:#:expression} );

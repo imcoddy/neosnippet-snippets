@@ -72,3 +72,16 @@ snippet console-log
 alias cl
 options head
   console.log(${0:TARGET});
+
+snippet logi
+alias log
+options head
+  console.info(${0:TARGET});
+
+snippet logw
+options head
+  console.warn(${0:TARGET});
+
+snippet loge
+options head
+  console.error(${0:TARGET});
