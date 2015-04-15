@@ -76,7 +76,10 @@ snippet eval
 	}
 
 snippet log
-	use Data::Dumper;  print Data::Dumper->Dump( ${1:#:expression} );
+	warn ( '-----------------------------log ${1:#:var} ' );
+
+snippet logd
+	warn ( '-----------------------------log ${1:#:var} '.$${2:#:expression} );
 
 snippet vd
-	use Data::Dumper;  print Data::Dumper->Dump( ${1:#:expression} );
+	use Data::Dump qw/dump/; warn dump $${1:#:expression};
